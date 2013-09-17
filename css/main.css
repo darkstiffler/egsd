@@ -1,0 +1,32 @@
+html {
+  background-color: rgb(220,220,220);
+}
+img {
+  height: 450px;
+  width: auto;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 15px grey;
+  display: block;
+  margin: 0 auto;
+}
+h2, p {
+  text-align: center;
+}
+#button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  box-shadow:5px 5px 9px grey;
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 130px;
+}  
+#container {
+  width: 1024px;
+  margin: 0 auto;
+}

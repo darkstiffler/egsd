@@ -1,0 +1,7 @@
+header{position: relative !important;top: 194px !important;}
+section{top: 173px;margin-bottom: 200px;}
+#portfolio .box{min-height: 546px;}
+.splash_footer{margin-top: 0px;}
+#content>ul{padding-bottom: 150px;}
+
+#menu .port_link a:before{z-index: 999;position: absolute !important;}

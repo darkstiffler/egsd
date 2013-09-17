@@ -1,0 +1,86 @@
+<div id="option-home" class="group">
+	      <div id="home_text">
+	      	<?php
+	      		foreach (get_option('sense_home') as $value) {
+	      	?>
+	      	<div style="left: <?php echo $value['margin-left'] ?>; top: <?php echo $value['margin-top'] ?>; font-family: <?php echo $value['font-family'] ?>; font-size: <?php echo $value['font-size']?>"  class="drag<?php if($value['accent_color']=='accent'){echo ' accent_color';} ?>"><?php echo $value['text']; ?></div>
+	      	<?php		
+	      		}
+			?>
+		</div>
+	      <div id="edit_str">
+	      	<label for="str_value">Edit text:</label>
+	      	<input id="str_value" name="str_value" value="" />
+	      	<span class="font_size_edit">
+	      		Font size: 
+	      		<a class="litle"><</a>
+	      		<input id="font_size" name="font_size" value="" />
+	      		<a class="big">></a>
+	      	</span>
+	      	Font family: 
+	      	<select id="font_family" name="font_family">
+	      		<option value="Anton,sans-serif">Anton</option>
+	      		<option value="Cuprum,sans-serif">Cuprum</option>
+	      		<option value="Spicy Rice,cursive">Spicy Rice</option>
+	      	</select>
+	      	<input type="checkbox" id="accent_color" name="accent_color" value="accent_color">Accent color
+			<a id="add_item">Add New Str</a>
+			<a id="delete_item">Delete Str</a>
+			<a id="save_items">Save</a>
+
+	      </div>
+	      <div id="soc_items">
+	      	<?php
+	      		foreach (get_option('sense_soc') as $value) {
+	      	?>
+				<div class="soc_item">
+					<span class="soc_name"><?php echo $value['name']; ?></span>
+					<input type="text" class="soc_url" name = "<?php echo $value['name']; ?>_url" value = "<?php echo $value['url']; ?>"/>
+					<input class="of-input" name="<?php echo $value['name']; ?>" id="<?php echo $value['name']; ?>_upload" type="hidden" value="<?php echo $value['icon']; ?>" />
+					<div class="upload_button_div"><span class="button image_upload_soc" id="<?php echo $value['name']; ?>">Upload Icon</span></div>
+					<?php if(!empty($value['icon'])){ ?>
+						<img class="of-option-image" id="image_<?php echo $value['name']; ?>" src="<?php echo $value['icon']; ?>" alt="" />
+					<?php }; ?>
+				</div>
+
+	      	<?php		
+	      		}
+			?>
+			</div>
+	      <input name="soc_name" id="soc_name" />
+	      <a id="add_soc">Add new icon</a>
+	      <a id="save_soc">Save</a>
+      </div>
+
+
+
+
+
+
+      <div class="container">
+		<div id="option-contact" class="group">
+			<div id="new_contact_form">
+ 	      	<?php
+	      		foreach (get_option('sense_contact_form') as $value) {
+	      	?>
+	      		<span class="contact_item">
+	      			<input class="data" name="<?php echo $value['name']; ?>" value="<?php echo $value['label']; ?>"/>
+	      			<input <?php if($value['is_checked']){echo 'checked';} ?> type="checkbox" class="is_required"/> Required 
+	      			<a class="delete_item">delete</a>
+					<input <?php if($value['input_type']=='text'){echo 'checked';} ?> type="radio" class="type_text" value="text" name="input_type_<?php echo $value['name'] ?>" checked=""/>text 
+					<input <?php if($value['input_type']=='textarea'){echo 'checked';} ?> type="radio" class="type_textarea" value="textarea" name="input_type_<?php echo $value['name'] ?>"/> textarea
+	      		</span>
+	      	<?php		
+	      		}
+			?>
+ 		</div>
+			<div id="item">
+				<label for="field_name">Label: </label>
+				<input type="text" name='field_label' value="" id="field_label" />
+				<label for="field_name">Name: </label>
+				<input type="text" name='field_name' value="" id="field_name" />
+				<a href="#" id="add_new_field">Add New Field</a>
+				<a href="#" id="save_contact_form">Save</a>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,15 @@
+/* Twitter */
+ #preloader{margin:0;padding:1em 1em 1em 3em;text-indent:10px;background:transparent url(../images/loader.gif) 1em center no-repeat}
+ ul#twitter_update_list{margin:0 66px 0 0;padding:0 0 0 4px;list-style-type:none; min-height:250px;}
+  ul#twitter_update_list li{margin:0 0 13px 0;color:#575757;font-size:14px;line-height:20px;background: url('../images/twit_marker.png') no-repeat;padding: 0 0 0 40px;}
+   ul#twitter_update_list>li>a{color:#fff; padding:3px 0 0 19px; display:inline-block;font-size:14px !important;}
+    ul#twitter_update_list li span{display:block;background:#ff911b; padding:1px 20px 0 15px; line-height:26px; min-height:77px;}    
+    ul#twitter_update_list li span a{color:#fff; }
+	#twitter a:hover{ text-decoration:underline !important;}
+   ul#twitter_update_list li.lastTweet{border-bottom:none}   
+      a#profileLink{display:block;padding:0.3em 1em;color:#fff;background-color:#000}
+   a#profileLink{display:block;padding:0.3em 1em;color:#fff;background-color:#000}
+#twitter{background: url('../images/twitter.png') repeat;overflow: hidden;border-radius: 8px;text-align: left;margin: 0 10px 20px 10px;padding: 12px 0 0px 20px;box-shadow: 4px 4px 0 rgba(0,0,0,0.25);}
+.tweet_list li{margin:0 -1000px 0px 0;padding: 7px 0 10px;color:#fff;font-size:14px;line-height:20px;opacity: 0;display: none;}
+.tweet_list{background: url('../images/twit_marker.png') no-repeat;overflow: hidden;padding: 0 20px 16px 55px;position: relative;}
+.tweet_list li.active{display: block;opacity: 1;margin-right: auto;}

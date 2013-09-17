@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>John Perez</title>
+  <meta charset="utf-8">
+  <link href='images/favicon.ico' rel='shortcut icon'>
+  <link href="jackbox/css/jackbox.css" rel="stylesheet" type="text/css" />
+  <link href="jackbox/css/jackbox_hovers.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="jackbox/js/libs/jquery.address-1.5.min.js"></script>
+  <script type="text/javascript" src="jackbox/js/libs/Jacked.js"></script>
+  <script type="text/javascript" src="jackbox/js/jackbox-swipe.js"></script>
+  <script type="text/javascript" src="jackbox/js/jackbox.js"></script>
+  <script type="text/javascript" src="jackbox/js/libs/StackBlur.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script>
+		var map;
+		var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+		var MY_MAPTYPE_ID = 'hiphop';
+		function initialize() {
+			var stylez = [
+				{
+					"stylers": [
+						{ "saturation": -97 }
+					]
+				},{
+				}
+			] 
+			var mapOptions = {
+				zoom: 12,
+				center: brooklyn,
+				mapTypeControlOptions: {
+					mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+				},
+				mapTypeId: MY_MAPTYPE_ID
+			};
+			map = new google.maps.Map(document.getElementById('map_canvas'),
+					mapOptions);
+			var styledMapOptions = {
+				name: 'GrayScale'
+			};
+			var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
+			map.mapTypes.set(MY_MAPTYPE_ID, jayzMapType);
+		}
+    </script>
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+	<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+	<![endif]-->
+</head>
+<body onload="initialize()">
+<div id="main_bg">
+<div class="glow"></div>
+  <div class="spinner"><span></span></div>  
+  <div class="main_container">
+    <div class="container_12">
+        <!--header -->
+            <header>
+              <div class="grid_12">
+                <h1><a class="hide_text" href="#!/splash" id="logo">John Perez</a></h1>
+                <div class="menuHolder">
+                   <nav class="menu">
+                      <ul id="menu">
+                          <li><a href="#!/splash"><div class="mText">splash</div></a></li> 
+                          <li class="about_link"><a href="#!/about"><em></em><span>About</span></a></li>
+                          <li class="port_link"><a href="#!/portfolio"><em></em><span>Portfolio</span></a></li> 
+                          <li class="service_link"><a href="#!/services"><em></em><span>Services</span></a></li>
+                          <li class="contact_link"><a  href="#!/contacts"><em></em><span>Contact</span></a></li>
+                      </ul>
+                    </nav>
+                </div>
+                <div class="description">
+                  <div class="inner">Hi there! I'm a creative graphic designer currently working in San Francisco. I design and make cool things for the web and print. Feel free to see my portfolio and thanks for visiting my website...</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+            </header>
+        <!--header end-->    
+            <nav class="splashHolder">
+                 <ul class="splash_menu">
+                    <li class="grid_3">
+                        <a href="#!/about">
+                          <em class="menu_icon"><img src="images/splash_icon1.png" alt=""></em>
+                          <span>About</span>
+                        </a>
+                    </li>
+                    <li class="grid_3">
+                        <a href="#!/portfolio">
+                            <em class="menu_icon"><img src="images/splash_icon2.png" alt=""></em>
+                            <span>Portfolio</span>
+                        </a>
+                    </li> 
+                    <li class="grid_3">
+                        <a href="#!/services">
+                          <em class="menu_icon"><img src="images/splash_icon3.png" alt=""></em>
+                          <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="grid_3 last-col">
+                        <a  href="#!/contacts">
+                          <em class="menu_icon"><img src="images/splash_icon4.png" alt=""></em>
+                          <span>Contact</span>
+                        </a>
+                    </li>
+               </ul>
+            </nav>
+          <!--content -->
+            <section id="content">
+              <ul>
+                    <li id="splash"></li>
+                    <li id="about">
+                      <div class="wrapper">
+                        <article class="grid_12">
+                          <div class="box">
+                            <div class="grid_7 alpha">
+                              <div class="pad_box1">
+                                <div class="biography">
+                                  <div class="flexslider">
+                                    <ul class="slides">
+                                      <li><img src="images/slide1.jpg" alt=""></li>
+                                      <li><img src="images/slide2.jpg" alt=""></li>
+                                      <li><img src="images/slide3.jpg" alt=""></li>
+                                    </ul>
+                                  </div>
+                                  <div class="text">
+                                    <ul class="date_list">
+                                      <li>
+                                        <strong>Date of birth</strong><br>
+                                        Februar 06, 1983 (29 years)
+                                      </li>
+                                      <li>
+                                        <strong>Education</strong><br>
+                                        Masters degree<br>
+                                        University of studies, country, city (1999 - 2005)
+                                      </li>
+                                      <li>
+                                        <strong>Specialization</strong><br>
+                                        Web &amp; graphic designer
+                                      </li>
+                                      <li class="last">
+                                        <p class="p2"><strong>Awards</strong><br> Site of the day <br>
+                                          (<a href="#">awwwards.com</a>)</p>
+                                        Website winner<br>
+                                        (<a href="#">cssdesignawards.com</a>)
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                            <div class="grid_5 omega last-col">
+                              <div class="pad_box2">
+                                <h2>My Experience</h2>
+                                <ul class="experience_list">
+                                  <li>
+                                    <div class="ext_box experience">
+                                      <figure>
+                                        <strong>Senior Web Designer</strong><br>
+                                        Interactive Agency 
+                                      </figure>
+                                      <div>October 2009-present</div>
+                                    </div>
+                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, nsectetur, adipisci velit.
+                                  </li>
+                                  <li>
+                                    <div class="ext_box experience">
+                                      <figure>
+                                        <strong>Web Designer</strong><br>
+                                        Interactive Agency 
+                                      </figure>
+                                      <div>May 2007-September 2009</div>
+                                    </div>
+                                   Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                                  </li>
+                                  <li class="last">
+                                    <div class="ext_box experience">
+                                      <figure>
+                                        <strong>Graphic Designer</strong><br>
+                                        Interactive Agency 
+                                      </figure>
+                                      <div>July 2005-April 2007</div>
+                                    </div>
+                                    Quis autem vel eum iure reing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. 
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="clear"></div>
+                            <a href="mailto:mail@companyname.com" class="hire_link"></a>
+                          </div>
+                        </article>
+                      </div>
+                    </li>
+                    <li id="portfolio">
+                      <div class="wrapper">
+                        <article class="grid_12">
+                          <div class="box">
+                            <div class="pad_box1">
+                              <h2 class="ind">Portfolio</h2>
+                                <div class="filter_box">
+                                  <div class="portfolio-filter">
+                                      <ul id="portfolio-filter">
+                                        <li>
+                                            <a href="#">Filter</a>
+                                            <ul>
+                                              <li><a href="#all" title="">All</a></li>
+                                              <li><a href="#web" title="" rel="web">Web</a></li>
+                                              <li><a href="#motion" title="" rel="motion">Motion</a></li>
+                                              <li><a href="#illustration" title="" rel="illustration">Illustration</a></li>
+                                              <li><a href="#3d" title="" rel="3d">3d</a></li>
+                                            </ul>
+                                          </li>
+                                        </ul>
+                                   </div>
+                                   <div class="portfolio-item">
+                                      <ul id="portfolio-list">
+                                        <li class="motion">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="https://www.youtube.com/watch?v=0t9mZ8VKm3o" data-group="images" data-title="Oriflame. Midnight Pearl">
+                                                <img src="images/portfolio1.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Oriflame. Midnight<br> Pearl <br>
+                                                    <span>Motion</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="web">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio2.jpg" data-group="images" data-title="The Underworld Kingdom">
+                                                <img src="images/portfolio2.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    The Underworld<br> Kindom<br>
+                                                    <span>Web</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="illustration">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio9.jpg" data-group="images" data-title="Minta">
+                                                <img src="images/portfolio3.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Minta<br>
+                                                    <span>Illustration</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="3d">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="http://vimeo.com/39064652" data-group="images" data-title="Mitsubishi. iMiev">
+                                                <img src="images/portfolio4.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Mitsubishi. iMiev<br>
+                                                    <span>3D</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="motion">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/becks.jpg" data-group="images" data-title="Beck's">
+                                                <img src="images/portfolio5.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Beck's<br>
+                                                    <span>Motion</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="web">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio11.jpg" data-group="images" data-title="Oksana Fedorova">
+                                                <img src="images/portfolio6.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Oksana Fedorova<br>
+                                                    <span>Web</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="illustration">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio7.jpg" data-group="images" data-title="Staropramen">
+                                                <img src="images/portfolio7.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Staropramen<br>
+                                                    <span>Illustration</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="3d">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio12.jpg" data-group="images" data-title="Samsung. MWO">
+                                                <img src="images/portfolio8.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Samsung. MWO<br>
+                                                    <span>3D</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="motion">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio10.jpg" data-group="images" data-title="Famous Grouse">
+                                                <img src="images/portfolio9.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Famous Grouse<br>
+                                                    <span>Motion</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="web">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio3.jpg" data-group="images" data-title="Bacardi">
+                                                <img src="images/portfolio10.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Bacardi<br>
+                                                    <span>Web</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="illustration">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio4.jpg" data-group="images" data-title="Wetter Water">
+                                                <img src="images/portfolio11.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Wetter Water<br>
+                                                    <span>Illustration</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li class="3d">
+                                          <div class="portfolio-box">
+                                            <div class="portoflio-img">
+                                              <a class="jackbox" href="images/portfolio5.jpg" data-group="images" data-title="Fanta. Apple">
+                                                <img src="images/portfolio12.png" alt="">
+                                                <span class="description">
+                                                  <span class="inner">
+                                                    Fanta. Apple<br>
+                                                    <span>3D</span>
+                                                  </span>
+                                                </span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                  </div>      
+                                </div>
+                            <div class="clear"></div>
+                            <a href="mailto:mail@companyname.com" class="hire_link"></a>
+                          </div>
+												</div>
+                        </article>
+                      </div>
+                    </li>
+                    <li id="services">
+                      <div class="wrapper">
+                        <article class="grid_12">
+                          <div class="box">
+                            <article class="grid_4 alpha">
+                              <div class="pad_box1">
+                                <h2 class="ind1">My Professional Skills</h2>
+                                <div class="skill_box">
+																	<div class="skill_label">HTML5<span class="skill_num">7/10</span></div>
+																	<div class="skill_level"><div class="skill_set" data-skill="70"></div></div>
+																</div>
+																<div class="skill_box">
+																	<div class="skill_label">jQuery<span class="skill_num">6/10</span></div>
+																	<div class="skill_level"><div class="skill_set" data-skill="60"></div></div>
+																</div>
+																<div class="skill_box">
+																	<div class="skill_label">JavaScript<span class="skill_num">8/10</span></div>
+																	<div class="skill_level"><div class="skill_set" data-skill="80"></div></div>
+																</div>
+																<div class="skill_box">
+																	<div class="skill_label">CSS3<span class="skill_num">9/10</span></div>
+																	<div class="skill_level"><div class="skill_set" data-skill="90"></div></div>
+																</div>
+																<div class="skill_box">
+																	<div class="skill_label">Photoshop<span class="skill_num">5/10</span></div>
+																	<div class="skill_level"><div class="skill_set" data-skill="50"></div></div>
+																</div>
+																<div class="skill_box last">
+																	<div class="skill_label">PHP<span class="skill_num">6/10</span></div>
+																	<div class="skill_level"><div class="skill_set" data-skill="60"></div></div>
+																</div>
+                              </div>
+                            </article>
+														<article class="grid_3">
+															<div class="pad_box1">
+                                <h2 class="ind1">Main Services</h2>
+                                <ul class="service_list">
+                                  <li>
+                                    <h3>Website Design</h3>
+                                    Ut tellus dolor, dapibus eget, ele- mentum vel, cursus eleifend, elit. Aenean auctor wisi et urnaliquam erat volutpat. Duis ac turpis. Integer rutrum ante.
+                                  </li>
+                                  <li class="last">
+                                    <h3>Programing</h3>
+                                    Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. 
+                                  </li>
+                                </ul>
+                                <div class="button_wrap2">
+                                  <a href="#!/sample" class="button">More Services</a>
+                                </div>
+                              </div>
+														</article>
+                            <article class="grid_5 omega">
+                              <div class="pad_box2">
+                                <h2 class="ind">Clients References</h2>
+                                <ul class="reference_list">
+                                  <li>
+                                    <blockquote>
+                                      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, nsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam."
+                                    </blockquote>
+                                    <div class="author">Robert Smith, Chief Digital Officer</div>
+                                  </li>
+                                  <li class="last">
+                                    <blockquote>
+                                      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
+                                    </blockquote>
+                                    <div class="author">Jane Thompson, Executive Director</div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </article>
+                            <div class="clear"></div>
+                            <a href="mailto:mail@companyname.com" class="hire_link"></a>
+                          </div>
+                        </article>
+                      </div>
+                    </li>
+                    <li id="contacts">
+                      <div class="wrapper">
+                        <article class="grid_12">
+                          <div class="box">
+                            <div class="grid_4 alpha">
+                              <div class="pad_box1">
+                                <h2 class="ind">Get In Touch</h2>
+                                <form id="contact-form">
+                                    <div class="success">Contact form submitted!<br>
+                                        <strong>We will be in touch soon.</strong>
+                                    </div>
+                                    <fieldset>
+                                      <label class="name">
+                                        <input type="text" value="Your Name*">
+                                          <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span>
+                                      </label>
+                                      <label class="email">
+                                        <input type="text" value="Email*">
+                                          <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span>
+                                      </label>
+                                      <label class="message notRequired">
+                                        <textarea>Message</textarea>
+                                          <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span>
+                                      </label>
+                                      <div class="buttons2">
+                                          <a href="#" data-type="submit" class="button">Send Your Message</a>
+                                      </div>
+                                    </fieldset>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="grid_8 omega">
+                              <div class="pad_box2">
+                                <div class="ext_box map_box">
+                                  <figure>
+                                    <div id="map_canvas"></div>
+                                  </figure>
+                                  <div>
+                                    <h2>Contact Info</h2>
+                                    <p class="p3 gray1">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, nsectetur.</p>
+                                    <dl class="address">
+                                      <dt>8901 Marmora Road,<br> Glasgow, D04 89GR.</dt>
+                                      <dd><span><img src="images/ico1.png" alt=""></span>+1 800 603 6035</dd>
+                                      <dd><span><img src="images/ico2.png" alt=""></span><a href="mailto:mail@companyname.com">mail@companyname.com</a></dd>
+                                      <dd><span><img src="images/ico3.png" alt=""></span>john.perez</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <a href="#" class="hire_link"></a>
+                            <div class="clear"></div>
+                          </div>
+                        </article>
+                      </div>
+                    </li>
+                    <li id="sample">
+                      <div class="wrapper gray1">
+                        <article class="grid_12">
+                          <div class="box p_bot1">
+                            <div class="grid_12 alpha omega">
+                              <div class="pad_box3">
+                                <h2>Sample Text Page</h2>
+                                <p class="p2">Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. </p>
+<p class="p2">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae,dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. </p>
+Lorem ipsum dolor sit amet, consectetuer adipisMauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in,auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+                              </div>
+                            </div>
+                            <a href="#" class="hire_link"></a>
+                            <div class="clear"></div>
+                          </div>
+                        </article>
+                      </div>
+                    </li>
+              </ul>
+            </section>
+            <footer>
+              <div class="splash_footer">
+                &copy; Copyright 2013 John Perez Personal Page. All rights reserved.
+              </div>
+              <div class="footer">
+                <div id="twitter" class="twitter">
+                
+                </div>
+                <div class="clear"></div>
+                <div class="privacy">
+                  &copy; 2013 John Perez Personal Page. All rights reserved.
+                </div>
+                <ul class="social">
+                  <li>
+                    <a href="javascript:;" id="show_icons" title="Network" class="soc1"><img src="images/soc1.png" alt=""></a>
+                    <div class="icons">
+                      <a href="#" title="Facebook"><img src="images/socico1.png" alt=""></a>
+                      <a href="#" title="Twitter"><img src="images/socico2.png" alt=""></a>
+                      <a href="#" title="Google+"><img src="images/socico3.png" alt=""></a>
+                      <a href="#" title="LinkedIn"><img src="images/socico4.png" alt=""></a>
+                      <a href="#" title="Flickr"><img src="images/socico5.png" alt=""></a>
+                      <a href="#" title="Pinterest"><img src="images/socico6.png" alt=""></a>
+                      <a href="#" title="Vimeo"><img src="images/socico7.png" alt=""></a>
+                      <a href="#" title="YouTube"><img src="images/socico8.png" alt=""></a>
+                      <a href="#" title="Dribble"><img src="images/socico9.png" alt=""></a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" title="Download my resume" class="soc2"><img src="images/soc2.png" alt=""></a>
+                  </li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </footer>
+      </div>
+    </div>
+    <div id="panel">
+      <a href="#" class="panel_button"></a>
+      <div class="inner">
+        <h3>Theme settings</h3>
+        <h4>Background color:</h4>
+        <ul class="tools_list">
+          <li>
+            <a href="javascript:set_bg_color('#16994a');" class="color1"></a>
+            <a href="javascript:set_bg_color('#e95d5d');" class="color2"></a>
+            <a href="javascript:set_bg_color('#008eb4');" class="color3"></a>
+            <a href="javascript:set_bg_color('#77479b');" class="color4"></a>
+          </li>
+          <li>
+            <a href="javascript:set_bg_color('#1352a2');" class="color5"></a>
+            <a href="javascript:set_bg_color('#45a38d');" class="color6"></a>
+            <a href="javascript:set_bg_color('#f16c47');" class="color7"></a>
+            <a href="javascript:set_bg_color('#999999');" class="color8"></a>
+          </li>
+        </ul>
+        <h4>Background pattern:</h4>
+        <ul class="tools_list">
+          <li>
+            <a href="javascript:set_bg_image('pattern1');" class="pattern1"></a>
+            <a href="javascript:set_bg_image('pattern2');" class="pattern2"></a>
+            <a href="javascript:set_bg_image('pattern3');" class="pattern3"></a>
+            <a href="javascript:set_bg_image('pattern4');" class="pattern4"></a>
+          </li>
+          <li>
+            <a href="javascript:set_bg_image('pattern5');" class="pattern5"></a>
+            <a href="javascript:set_bg_image('pattern6');" class="pattern6"></a>
+            <a href="javascript:set_bg_image('pattern7');" class="pattern7"></a>
+            <a href="javascript:set_bg_image('pattern8');" class="pattern8"></a>
+          </li>
+        </ul>
+        <div class="button_wrap1">
+          <a href="javascript:reset();" class="button1">Reset</a>
+        </div>
+      </div>
+    </div>
+</div>
+<script>
+
+$(window).load(function() {
+  $("#show_icons").click(function(){
+    $(".icons, .icons a").toggle('slow');
+   })
+	$('.spinner').fadeOut();
+	$('body').css({overflow:'auto', 'min-height':'820px'});
+  $('#contact-form').forms()
+	$('.skill_set').each(function() {
+		var skill = $(this);
+		var skill_width = $(this).attr('data-skill');  
+	 // skill.css('width', skill_width+'%');
+		skill.animate({
+				width: skill_width+'%'
+		},1000);
+	});
+  $(function(){
+    var li=$('.tweet_list li')
+     ,n=0
+     ,activeClass="active"
+   
+    function fu(){
+     li.removeClass(activeClass)
+     li.eq(n++).addClass(activeClass)
+     n=n<li.length?n:0
+     setTimeout(fu,10000)
+    }
+    fu()
+   })
+  jQuery(".jackbox[data-group]").jackBox("init", {deepLinking: false, useThumbs:false});
+  filter_start();
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+.element{margin: 0 0px 16px;overflow: hidden;height: 157px;width: 214px !important;}
+.isotope-hidden.isotope-item a{display: block;position: absolute;width: 100%;height: 100%;left: 0;top: 0;}
+.element a{text-decoration: none;display: block;}
+.element a .description{position: absolute;display: block !important;left: 0;top: 0;width: 100%;height: 100%;background: url('../images/description.png') repeat;border-radius: 5px;}
+.element a:hover .description{opacity: 1 !important;}
+.element a .inner{display: block;text-align: center;font-size: 18px;line-height: 23px;padding: 44px 0 0 0;}
+.element a .inner span{font-size: 14px;color: #7f7f7f;}
+.element img{width: 100%;}
+
+.load_more{display: block;border-radius: 4px;background: #fff;box-shadow: 4px 4px 0 rgba(0,0,0,0.25);padding: 30px 0 0;text-align: center;color: #7f7f7f;font-size: 18px;line-height: 24px;width: 216px;height: 156px;}
+
+#container{margin-left: 0px;}
+.first{margin-left: 0 !important;}

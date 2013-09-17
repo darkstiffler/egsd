@@ -1,0 +1,41 @@
+/*================================>> Slide Out Panel<<==================================*/
+#panel{
+    width: 160px;
+    height: 281px;
+    left: -160px;
+    z-index: 999;
+    top: 24%;
+    position: fixed;
+    border-radius: 0 0 9px 0;
+    background: url('../images/panel_bg.png') repeat;
+}
+#panel .inner{padding: 7px 0 20px 15px;}
+#panel .panel_button{display: block;position: absolute;right: -40px;width: 40px;height: 40px;background: url('../images/tools_open.png') no-repeat;}
+#panel .panel_button:hover{background-position: 0 -40px;}
+
+#panel h3, #panel h4{margin-bottom: 8px;}
+
+.tools_list{}
+.tools_list>li{overflow: hidden;margin-bottom: 8px;}
+.tools_list a{display: block;float: left;width: 24px;height: 24px;margin-left: 8px;border-radius: 3px;}
+.tools_list>li a:first-child{margin-left: 0;}
+
+.tools_list .color1{background: #16994a;}
+.tools_list .color2{background: #e95d5d;}
+.tools_list .color3{background: #008eb4;}
+.tools_list .color4{background: #77479b;}
+.tools_list .color5{background: #1352a2;}
+.tools_list .color6{background: #45a38d;}
+.tools_list .color7{background: #f16c47;}
+.tools_list .color8{background: #999999;}
+
+.tools_list .pattern1{background: url('../images/pattern1.png') no-repeat;}
+.tools_list .pattern2{background: url('../images/pattern2.png') no-repeat;}
+.tools_list .pattern3{background: url('../images/pattern3.png') no-repeat;}
+.tools_list .pattern4{background: url('../images/pattern4.png') no-repeat;}
+.tools_list .pattern5{background: url('../images/pattern5.png') no-repeat;}
+.tools_list .pattern6{background: url('../images/pattern6.png') no-repeat;}
+.tools_list .pattern7{background: url('../images/pattern7.png') no-repeat;}
+.tools_list .pattern8{background: url('../images/pattern8.png') no-repeat;}
+
+

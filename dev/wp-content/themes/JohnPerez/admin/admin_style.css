@@ -1,0 +1,370 @@
+.upload_button_div .button{
+	line-height: 20px;
+	margin-right: 10px;
+}
+.upload_button_div{
+	margin-bottom: 20px;
+}
+.of-option-image{
+	max-width: 300px;
+}
+
+.remove-field.hide{
+	display: none;
+}
+input[type=file]{
+	/*z-index: -1!important;*/
+}
+input[type="checkbox"]{
+	margin-right:8px!important;
+}
+/*.logo h2{
+    background: none repeat scroll 0 0 #AAAAAA;
+    border-radius: 4px 4px 0 0;
+    color: #464646;
+    padding: 5px 15px;
+}
+#ofform nav{
+	width: 100%;
+	float: left;
+	background: #cccccc;
+	margin-bottom: 20px;
+}
+#ofform nav li{
+	float: left;
+	padding: 5px 10px;
+}
+#ofform .container{
+	padding: 0 15px;
+}
+#ofform .group{
+	width: 100%;
+	float: left;
+}
+#ofform .group h2{
+	border-bottom: 3px double #000000;
+}
+
+#ofform{
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+	background: #aaaaaa;
+}*/
+/*#ofform .button-primary, .button{
+	border-radius: 3px;
+	margin-right: 10px;
+}
+#ofform textarea{
+	width: 100%;
+}
+#ofform .form_input, #ofform .of-input{
+	width: 100%;
+}
+#ofform .of-input.of-radio{
+	width: auto;
+}
+#ofform h4{
+	margin-bottom: 0;
+	font-size: 14px;
+	padding: 5px 0;
+}
+*/
+#home_text{
+	width: 768px;
+	height: 300px;
+	position: relative;
+	height:500px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+#ofform .drag{
+	cursor: pointer;
+	border: 1px solid transparent;
+	position: absolute;
+	font-family: Anton,sans-serif;
+	line-height: 1;
+}
+
+#add_item{
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.litle, .big{
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 30px;
+    margin: 2px 10px 0;
+    text-indent: -9999px;
+    width: 16px;
+}
+.litle{
+    background: url("../images/prev.png") no-repeat scroll -16px 0 transparent;
+}
+.big{
+    background: url("../images/next.png") no-repeat scroll 0 0 transparent;
+}
+
+
+#font_size, #speed{
+    text-align: center;
+    width: 60px;
+    float: left;
+}
+.accent_color{
+	color: #FFDE00 !important;
+}
+
+#ofform #save_status{
+	display: none;
+	height:10px;
+	color: #ff0000;
+	position: fixed;
+	right: 20px;
+	top: 50px;
+}
+
+#select_color_picker, #logo_color_picker,
+#select_color1_picker{
+	float: right;
+	width: 45px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid #bababa;
+}
+.color{
+	width: 260px;
+}
+
+.group input[type="text"] {
+    width: 200px !important;
+}
+
+#new_contact_form{
+	height:300px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+#new_contact_form .contact_item{
+	border: 1px solid #000000;
+	padding: 5px;
+	display: block;
+	margin: 10px 0;
+	background: #ccc;
+	cursor: move;
+}
+
+.delete_item{
+	cursor: pointer;
+}
+
+#option-generalsettings input, #option-generalsettings textarea{
+	/*width: 100%;*/
+}
+
+#logo_color, #select_color, select{
+	width: 175px
+}
+#font_family{
+	margin: 0 10px;
+
+}
+#accent_color{
+	margin: 3px 7px 0 0;
+}
+.js .tmce-active .wp-editor-area{
+	color: #333333!important;
+}
+#footer{
+	position: relative!important;
+}
+#services_type{
+	margin-bottom: 1em;
+}
+#home_text{
+    border: 1px solid #BABABA;
+    border-radius: 3px 3px 3px 3px;
+    margin: 20px auto;
+}
+#admin-logo{
+	text-align: center;
+}
+#soc_items h4{
+	color: 	#3B3C3F;
+}
+#soc_items{
+	margin-top: 20px;
+}
+.soc_item{
+    float: left;
+    margin: 20px 0;
+    width: 100%;
+}
+.input_title{
+    float: left;
+    line-height: 30px;
+}
+.font_size_edit, .speed{
+	float: left;
+	margin-right: 5px;
+}
+
+#import_btn, #export_btn{
+		height: 27px!important;
+		position: relative;
+		display: inline;
+		padding: 3px 8px 4px 8px !important;
+		outline:none!important;
+		text-shadow: 1px 1px 0 #f7f7f7;
+		color: #2a2b2d !important;
+		border-width: 1px!important;
+		border-style: solid!important;
+		border-color: #a7a9ac !important;
+		vertical-align: baseline!important;
+		text-align: center!important;
+		text-decoration: none!important;
+		background: #f0f0f0 !important;
+		font: 13px/1.5 'PT Sans', Arial, sans-serif!important;
+		cursor: pointer!important;
+		color: #2A2B2D !important;
+		font-size: 13px !important;
+		border-radius: 3px 3px 3px 3px;
+    	box-shadow: 0 0 0 1px #F5F5F5 inset;
+}
+
+	#import_btn:hover, #export_btn:hover{
+		-webkit-box-shadow: inset 1px -1px 0 0 #d5d5d5, inset -1px 0 0 0 #d5d5d5!important;
+		-moz-box-shadow: inset 1px -1px 0 0 #d5d5d5, inset -1px 0 0 0 #d5d5d5!important;
+		box-shadow: inset 1px -1px 0 0 #d5d5d5, inset -1px 0 0 0 #d5d5d5!important;
+		background: rgb(242,242,242)!important; /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(242,242,242,1) 0%, rgba(183,183,183,1) 100%)!important; /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(100%,rgba(183,183,183,1)))!important; /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(183,183,183,1) 100%)!important; /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(183,183,183,1) 100%)!important; /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(183,183,183,1) 100%)!important; /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(242,242,242,1) 0%,rgba(183,183,183,1) 100%)!important; /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#b7b7b7',GradientType=0 )!important; /* IE6-9 */
+	}
+
+
+
+.team_item h4, .services_item h4{
+	color: #2A2B2D!important;
+}
+
+#add_new_team, #add_new_services{
+	    display: block;
+    float: left;
+    margin-top: 20px;
+
+}
+
+#add_new_services{
+	height: 17px !important;
+}
+#ofform .group{
+	display: none;
+}
+#ofform .group#option-general{
+	display: block;
+}
+
+.sense_upload_block .image_preview > img {
+    border: 1px solid #BABABA;
+    border-radius: 3px 3px 3px 3px;
+    margin: 10px 0 0 0;
+    max-width: 300px;
+    padding: 4px;
+}
+
+.sense_upload_block .sense_delete_image_button.hide{
+	display: none;
+}
+
+.sense_upload_block{
+	margin: 10px 0;
+}
+.check_type{
+	margin-top: 2px;
+}
+
+.soc_name{
+	font-weight: bold;
+}
+
+option.color1{
+    background: #16994a;
+}
+
+option.color2{
+    background: #e95d5d;
+}
+
+option.color3{
+    background: #008eb4;
+}
+
+option.color4{
+    background: #77479b;
+}
+
+option.color5{
+    background: #1352a2;
+}
+
+option.color6{
+    background: #45a38d;
+}
+
+option.color7{
+    background: #f16c47;
+}
+
+option.color8{
+    background: #999999;
+}
+
+div.pattern{
+	width:24px;
+	height:24px;
+	border-radius: 3px 3px 3px 3px;
+	margin: -26px 0 0 185px;
+        border: 1px solid #DFDFDF;
+}
+
+
+
+
+
+
+
+
+#movingimages-reorder-lists .menu-item, #gallery-reorder-lists .menu-item {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #E5E5E5;
+    cursor: move;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 5px 5px 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
